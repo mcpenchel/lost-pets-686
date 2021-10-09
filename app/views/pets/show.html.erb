@@ -1,0 +1,6 @@
+<h2><%= @pet.name %>, the <%= @pet.species %></h2>
+<p>This is a <%= @pet.size %> fella, and it was found at <%= @pet.found_at.strftime('%d-%m-%Y') %>.</p>
+
+<%= link_to 'Edit', edit_pet_path(@pet) %>
+<%= link_to 'Adopt or Cook', pet_path(@pet), method: :delete %>
+<%= link_to 'Go back to all pets', pets_path %>
